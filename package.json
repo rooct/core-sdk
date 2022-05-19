@@ -1,0 +1,38 @@
+{
+  "name": "core-sdk",
+  "version": "0.0.1",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "module": "dist/core-sdk.esm.js",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://github.com/rooct/core-sdk.git"
+  },
+  "scripts": {
+    "lint": "tsdx lint src test",
+    "build": "tsdx build",
+    "watch": "tsdx watch",
+    "test": "tsdx test --passWithNoTests",
+    "prepublishOnly": "npx tsdx build"
+  },
+  "dependencies": {
+    "@ethersproject/address": "^5.4.0",
+    "@ethersproject/bignumber": "^5.4.0",
+    "@ethersproject/providers": "^5.4.0",
+    "@ethersproject/solidity": "^5.4.0",
+    "big.js": "^6.1.1",
+    "decimal.js-light": "^2.5.0",
+    "jsbi": "^4.1.0",
+    "tiny-invariant": "^1.1.0",
+    "tiny-warning": "^1.0.0",
+    "toformat": "^2.0.0"
+  },
+  "devDependencies": {
+    "@types/big.js": "^6.1.0",
+    "tsdx": "^0.14.1"
+  }
+}
